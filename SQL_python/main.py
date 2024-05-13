@@ -384,7 +384,7 @@ for product in results:
 
 # ------------ Update ----------------
 db.Products.update_one(
-    {"ProductID": 120},
+    {"ProductName": "New High-End Speaker"},
     {"$set": {"StockQuantity": 60}}
 )
 
