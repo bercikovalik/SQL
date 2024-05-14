@@ -367,7 +367,7 @@ print('\n', "CRUD műveletek:", '\n')
 
 # ------------ Create ----------------
 
-"""
+
 db.Products.insert_one({
     "ProdutID": 120,
     "ProductName": "New High-End Speaker",
@@ -375,28 +375,24 @@ db.Products.insert_one({
     "Price": 450.00,
     "StockQuantity": 50
 })
-"""
-# ------------ Read ----------------
 
-results = db.Products.find({"Category": "Audio"})
-for product in results:
-    print(product)
 
 # ------------ Update ----------------
 db.Products.update_one(
-    {"ProductID": 120},
+    {"ProductName": "New High-End Speaker"},
     {"$set": {"StockQuantity": 60}}
 )
 
 # ------------ Delete ----------------
 """
 query = {"ProductName": "New High-End Speaker"}
-
-
 result10 = db.Products.delete_many(query)
-
-
 print(f"Documents deleted: {result10.deleted_count}")
 """
+# ------------ Read ----------------
+
+results = db.Products.find({"Category": "Audio"})
+for product in results:
+    print(product)
 
 client.close()
