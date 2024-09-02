@@ -1,7 +1,5 @@
 3. Feladat
 
-Csapat tagjai: Kovalik-Deák Bercel, Semsei Márton, Balla Attila
-
 Az adatbázis egy kitalált Webshop Vevőit, Rendeléseit, Rendelések részleteit és Termékeit tartalmazza. 
 Összesen 4 tábla, 20-20 sor és 5 oszlop mindegyikben.
 
